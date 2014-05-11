@@ -12,7 +12,7 @@ Quick Start
 ## 1.2	HBase
 * Enter the directory of HBase: **hbase-stable/target/hbase-0.92.1/hbase-0.92.1**
 * Configure **conf/regionservers**
-* Configure **hbase.rootdir** in **conf/hbase-site.xml**. This value should be set as the value of the **fs.default.name** (in [1.1][1] concatenating the "hbase". 
+* Configure **hbase.rootdir** in **conf/hbase-site.xml**. This value should be set as the value of the **fs.default.name** (in [1.1][Hadoop] concatenating the "hbase". 
 
 E.g. **hdfs://awan-0-00-0:44111/hbase**
 * Configure **hbase.tmp.dir**, **hbase.zookeeper.quorum**, **hbase.zookeeper.property.datadir** in **conf/hbase-site.xml**
