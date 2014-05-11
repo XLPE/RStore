@@ -18,7 +18,7 @@ Please download the compressed files (rstore.tar.gz.a*) and execute the followin
 ```bash
 cat rstore.tar.gz.a* | tar -zxv
 ```
-## Geting Start
+## Getting Started
 Refer to the file [guide.md](https://github.com/lifeng5042/RStore/blob/master/guide.md)
 ## Source Code
 ## Publication
