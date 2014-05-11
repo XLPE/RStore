@@ -1,5 +1,4 @@
 # RSTORE
-======
 ## Introduction
 It is widely recognized that OLTP and OLAP
 queries have different data access patterns, processing needs
@@ -28,8 +27,12 @@ queries.
 ## Executable Files
 The executable files are compressed in rstore.tar.gz.a*. 
 Please download the four files (rstore.tar.gz.a*) and execute 
-```cat rstore.tar.gz.a* | tar -zxv
+```bash
+cat rstore.tar.gz.a* | tar -zxv
 ```
 in order to decompress the files.
 
 ## Source Code
+
+## Publication
+[R-Store: A Scalable Distributed System for Supporting Real-time Analytics](http://www.comp.nus.edu.sg/~ooibc/icde14-rstore.pdf)
