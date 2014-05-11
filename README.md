@@ -1,6 +1,6 @@
-RStore
+# RSTORE
 ======
-
+## Introduction
 It is widely recognized that OLTP and OLAP
 queries have different data access patterns, processing needs
 and requirements. Hence, the OLTP queries and OLAP queries
@@ -25,7 +25,10 @@ stored in the storage system, either the data cube or OLTP
 database or both are used by the MapReduce jobs for OLAP
 queries. 
 
+## Executable Files
 The executable files are compressed in rstore.tar.gz.a*. 
 Please download the four files (rstore.tar.gz.a*) and execute 
 "cat rstore.tar.gz.a* | tar -zxv" 
 in order to decompress the files.
+
+## Source Code
