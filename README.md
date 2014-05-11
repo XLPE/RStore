@@ -23,16 +23,12 @@ updating the cube on incremental basis. Based on the metadata
 stored in the storage system, either the data cube or OLTP
 database or both are used by the MapReduce jobs for OLAP
 queries. 
-
 ## Executable Files
 The executable files are compressed in rstore.tar.gz.a*. 
-Please download the four files (rstore.tar.gz.a*) and execute 
+Please download the compressed files (rstore.tar.gz.a*) and execute the following command in order to decompress the files.
 ```bash
 cat rstore.tar.gz.a* | tar -zxv
 ```
-in order to decompress the files.
-
 ## Source Code
-
 ## Publication
 [R-Store: A Scalable Distributed System for Supporting Real-time Analytics](http://www.comp.nus.edu.sg/~ooibc/icde14-rstore.pdf)
