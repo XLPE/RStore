@@ -7,12 +7,12 @@ Quick Start
 * Configure **conf/masters**, **conf/slaves**
 * Configure the parameter **HADOOP_LOG_DIR** in **conf/hadoop-env.sh**
 * Configure the parameter  **hadoop.tmp.dir** and **fs.default.name** in **conf/core-site.xml**
-* Configure the parameter **mapred.job.tracker** in **conf/mapred-site.xml**
+* [1]:Configure the parameter **mapred.job.tracker** in **conf/mapred-site.xml**
 
 ## 1.2	HBase
 * Enter the directory of HBase: **hbase-stable/target/hbase-0.92.1/hbase-0.92.1**
 * Configure **conf/regionservers**
-* Configure **hbase.rootdir** in **conf/hbase-site.xml**. This value should be set the same as the value of the **fs.default.name** (1.1.(4)) contac the directory of name of HBase. 
+* Configure **hbase.rootdir** in **conf/hbase-site.xml**. This value should be set as the value of the **fs.default.name** ([1.1](1) concatenating the "hbase". 
 
 E.g. **hdfs://awan-0-00-0:44111/hbase**
 * Configure **hbase.tmp.dir**, **hbase.zookeeper.quorum**, **hbase.zookeeper.property.datadir** in **conf/hbase-site.xml**
