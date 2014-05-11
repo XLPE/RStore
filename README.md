@@ -28,7 +28,7 @@ queries.
 ## Executable Files
 The executable files are compressed in rstore.tar.gz.a*. 
 Please download the four files (rstore.tar.gz.a*) and execute 
-"cat rstore.tar.gz.a* | tar -zxv" 
+`cat rstore.tar.gz.a* | tar -zxv`
 in order to decompress the files.
 
 ## Source Code
