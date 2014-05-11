@@ -23,8 +23,4 @@ are streamed to a streaming MapReduce, namely Hstreaming, for
 updating the cube on incremental basis. Based on the metadata
 stored in the storage system, either the data cube or OLTP
 database or both are used by the MapReduce jobs for OLAP
-queries. We propose techniques to efficiently scan the real-time
-data in the storage system, and design an adaptive algorithm to
-process the real-time query based on our proposed cost model.
-The main objectives are to ensure the freshness of answers and
-low processing latency.
+queries. 
