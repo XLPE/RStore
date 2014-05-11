@@ -19,7 +19,7 @@ Please download the compressed files (rstore.tar.gz.a*) and execute the followin
 cat rstore.tar.gz.a* | tar -zxv
 ```
 ### System Configurations
-Refer to the file "Guide.pdf" 
+Refer to the file `Guide.pdf`
 ## Source Code
 ## Publication
 [R-Store: A Scalable Distributed System for Supporting Real-time Analytics](http://www.comp.nus.edu.sg/~ooibc/icde14-rstore.pdf)
