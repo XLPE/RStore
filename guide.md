@@ -10,13 +10,15 @@ Quick Start
 * Configure the parameter **mapred.job.tracker** in **conf/mapred-site.xml**
 
 ## 1.2	HBase
-(1)	Enter the directory of HBase: hbase-stable/target/hbase-0.92.1/hbase-0.92.1
-(2)	Configure conf/regionservers
-(3)	Configure “hbase.rootdir” in conf/hbase-site.xml. This value is set to the value of the “fs.default.name” (set in 1.1.(4)) contac the directory of name of HBase. 
-E.g. “hdfs://awan-0-00-0:44111/hbase” 
-(4)	Configure “hbase.tmp.dir”, “hbase.zookeeper.quorum”, ”hbase.zookeeper.property.datadir” in conf/hbase-site.xml
-(5)	Configure “HBASE_LOG_DIR” in conf/hbase-env.sh
-1.3	HStreaming
+* Enter the directory of HBase: **hbase-stable/target/hbase-0.92.1/hbase-0.92.1**
+* Configure **conf/regionservers**
+* Configure **hbase.rootdir** in **conf/hbase-site.xml**. This value should be set the same as the value of the **fs.default.name** (1.1.(4)) contac the directory of name of HBase. 
+
+E.g. **hdfs://awan-0-00-0:44111/hbase**
+* Configure **hbase.tmp.dir**, **hbase.zookeeper.quorum**, **hbase.zookeeper.property.datadir** in **conf/hbase-site.xml**
+* Configure **HBASE_LOG_DIR** in **conf/hbase-env.sh**
+
+## 1.3	HStreaming
 HStreaming is run on top of Hadoop. This Hadoop must be configured differently from the Hadoop in 1.1.
 (1)	Enter the directory of hadoop in Hstreaming: hstreaming/hadoop-1.0.1
 (2)	Configure conf/masters, conf/slaves
