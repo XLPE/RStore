@@ -1,7 +1,6 @@
 RStore
 ======
 
-R-Store: A Scalable Distributed System for Supporting Real-time Analytics
 It is widely recognized that OLTP and OLAP
 queries have different data access patterns, processing needs
 and requirements. Hence, the OLTP queries and OLAP queries
@@ -14,7 +13,8 @@ derived from real-time analytics are important. It is therefore
 desirable to provide real-time OLAP querying support, where
 OLAP queries read the latest data while OLTP queries create
 the new versions.
-In this paper, we propose R-Store, a scalable distributed
+
+In this work, we propose R-Store, a scalable distributed
 system for supporting real-time OLAP by extending the MapReduce framework.
 We extend an open source distributed key/value
 system, HBase, as the underlying storage system that stores data
