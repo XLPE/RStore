@@ -1,39 +1,46 @@
 Quick Start
 ====
-# 1 System Configuration
+# 1	System Configuration
 ## 1.1 Hadoop
 
 * Enter the directory of hadoop: **hadoop-1.0.1**
 * Configure **conf/masters**, **conf/slaves**
-* Configure the parameter **HADOOP_LOG_DIR** in **conf/hadoop-env.sh**
+* Configure the parameter **HADOOP\_LOG\_DIR** in **conf/hadoop-env.sh**
 * Configure the parameter  **hadoop.tmp.dir** and **fs.default.name** in **conf/core-site.xml**
 * Configure the parameter **mapred.job.tracker** in **conf/mapred-site.xml**
 
-## 1.2	HBase
+## 1.2 HBase
 * Enter the directory of HBase: **hbase-stable/target/hbase-0.92.1/hbase-0.92.1**
 * Configure **conf/regionservers**
-* Configure **hbase.rootdir** in **conf/hbase-site.xml**. This value should be set as the value of the **fs.default.name** (in [1.1][## 1.1 Hadoop]) concatenating the "hbase". E.g. **hdfs://awan-0-00-0:44111/hbase**
-* Configure **hbase.tmp.dir**, **hbase.zookeeper.quorum**, **hbase.zookeeper.property.datadir** in **conf/hbase-site.xml**
-* Configure **HBASE_LOG_DIR** in **conf/hbase-env.sh**
+* Configure the parameter **hbase.rootdir** in **conf/hbase-site.xml**. This value should be set as the value of the **fs.default.name** (in [1.1]) concatenating "**hbase**". E.g. **hdfs://awan-0-00-0:44111/hbase**
+* Configure the parameters **hbase.tmp.dir**, **hbase.zookeeper.quorum**, **hbase.zookeeper.property.datadir** in **conf/hbase-site.xml**
+* Configure the parameter **HBASE\_LOG\_DIR** in **conf/hbase-env.sh**
 
-## 1.3	HStreaming
-HStreaming is run on top of Hadoop. This Hadoop must be configured differently from the Hadoop in 1.1.
-(1)	Enter the directory of hadoop in Hstreaming: hstreaming/hadoop-1.0.1
-(2)	Configure conf/masters, conf/slaves
-(3)	Configure the parameter HADOOP_LOG_DIR in conf/hadoop-env.sh
-(4)	Configure the parameter  “hadoop.tmp.dir” and “fs.default.name” in conf/core-site.xml
-(5)	Configure the parameter “mapred.job.tracker” in conf/mapred-site.xml
-2	System Startup
-We suggest that the three systems (Hadoop, HBase, Hadoop in HStreaming) are started one by one. And once one system is started, it is better to check whether it is started correctly before starting the next systems. An easy way is to open the websites listed below to check the cluster status. Replace “URL_OF_MASTER_NODE” with the correct master node in Hadoop, Hbase and Hadoop in Hstreaming, respectively.
-(1)	Start Hadoop: bin/start-all.sh
-HDFS website: http://URL_OF_MASTER_NODE:44070/dfshealth.jsp
-MapReduce website:  http:// URL_OF_MASTER_NODE:44030/jobtracker.jsp
-(2)	Start HBase: bin/start-hbase.sh
-HBase website: http:// URL_OF_MASTER_NODE:55010/master-status
-(3)	Start Hadoop in hstreaming: bin/start-all.sh
-HDFS website: http:// URL_OF_MASTER_NODE:34070/dfshealth.jsp
-MapReduce website: http:// URL_OF_MASTER_NODE:34030/jobtracker.jsp
-3	Experimental Startup
+## 1.3 HStreaming
+HStreaming is run on top of 
+Hadoop. This Hadoop must be configured differently from the Hadoop in 1.1.
+
+* Enter the directory of hadoop in Hstreaming: **hstreaming/hadoop-1.0.1**
+* Configure conf/masters, conf/slaves
+* Configure the parameter **HADOOP\_LOG\_DIR** in **conf/hadoop-env.sh**
+* Configure the parameters **hadoop.tmp.dir** and **fs.default.name** in **conf/core-site.xml**
+* Configure the parameter **mapred.job.tracker** in **conf/mapred-site.xml**
+
+# 2 System Start-up
+We suggest that the three systems (Hadoop, HBase, Hadoop in HStreaming) are started one by one. And once one system is started, it is better to check whether it is started correctly before starting the next system. An easy way is to open the websites listed below to check the cluster status. Replace **URL\_OF\_MASTER\_NODE** with the correct master node url in Hadoop, Hbase and Hadoop in Hstreaming, respectively.
+
+* Start Hadoop: bin/start-all.sh  
+HDFS website: http://URL\_OF\_MASTER\_NODE:44070/dfshealth.jsp    
+MapReduce website:  http://URL\_OF\_MASTER\_NODE:44030/jobtracker.jsp
+
+* Start HBase: bin/start-hbase.sh  
+HBase website: http://URL\_OF\_MASTER\_NODE:55010/master-status
+* 
+Start Hadoop in hstreaming: bin/start-all.sh  
+HDFS website: http://URL\_OF\_MASTER\_NODE:34070/dfshealth.jsp  
+MapReduce website: http:// URL\_OF\_MASTER\_NODE:34030/jobtracker.jsp
+
+# Experimental Start-up
 First, you need to enter the directory of script “scripts” and configure the parameter “ROLAP_HOME” in “exp.conf” to be the home folder of the entire project.
 3.1	Data Generator
 (1)	Enter the directory “scripts/hstreaming”
