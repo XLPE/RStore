@@ -20,7 +20,6 @@ cat rstore.tar.gz.a* | tar -zxv
 ```
 ## Getting Started
 Refer to the file [guide.md](https://github.com/lifeng5042/RStore/blob/master/guide.md)
-## Source Code
 ## Publication
 [R-Store: A Scalable Distributed System for Supporting Real-time Analytics](http://www.comp.nus.edu.sg/~ooibc/icde14-rstore.pdf)
 
