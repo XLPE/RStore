@@ -88,8 +88,8 @@ p_mfgr,p_brand,p_type,p_container,p_retailprice
 * The second line contains the column information. For each column is represented by three parameters: column name, size of the column, and whether it is the key (“**1**” stands for key). The column size is used in the cost-based query optimization.
 * The third line contains the data cube information. The last column must be the numerical column. We assume that all the columns are stored in text format.
 
-# Compiling R-Store
-To compile HBase-R of R-Store, please download hbase-0.92.1 version, replace the folder in **src/main/java** with the folder in our src directory, and execute the following command to compile 
+# 4 Compiling R-Store
+To compile HBase-R of R-Store, please download hbase-0.92.1 version, replace the **org** folder in **src/main/java** with the **org** folder in our src directory, and execute the following command to compile 
 ```bash 
 ant pacakge 
 ```
