@@ -1,3 +1,5 @@
+Quick Start
+====
 # 1	System Configuration
 ## 1.1	Hadoop
 
