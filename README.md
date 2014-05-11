@@ -11,14 +11,14 @@ stored in the storage system, either the data cube or OLTP
 database or both are used by the MapReduce jobs for OLAP
 queries. 
 
-## Geting Start
-### Executable Files
+
+## Executable Files
 The executable files are compressed in rstore.tar.gz.a*. 
 Please download the compressed files (rstore.tar.gz.a*) and execute the following command in order to decompress the files.
 ```bash
 cat rstore.tar.gz.a* | tar -zxv
 ```
-### System Configurations
+## Geting Start
 Refer to the file [guide.md](https://github.com/lifeng5042/RStore/blob/master/guide.md)
 ## Source Code
 ## Publication
