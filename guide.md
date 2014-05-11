@@ -1,20 +1,18 @@
 Quick Start
 ====
-# 1	System Configuration
-## 1.1	Hadoop
+# 1 System Configuration
+## 1.1 Hadoop
 
 * Enter the directory of hadoop: **hadoop-1.0.1**
 * Configure **conf/masters**, **conf/slaves**
 * Configure the parameter **HADOOP_LOG_DIR** in **conf/hadoop-env.sh**
 * Configure the parameter  **hadoop.tmp.dir** and **fs.default.name** in **conf/core-site.xml**
-* [1]:Configure the parameter **mapred.job.tracker** in **conf/mapred-site.xml**
+* Configure the parameter **mapred.job.tracker** in **conf/mapred-site.xml**
 
 ## 1.2	HBase
 * Enter the directory of HBase: **hbase-stable/target/hbase-0.92.1/hbase-0.92.1**
 * Configure **conf/regionservers**
-* Configure **hbase.rootdir** in **conf/hbase-site.xml**. This value should be set as the value of the **fs.default.name** (in [1.1][Hadoop] concatenating the "hbase". 
-
-E.g. **hdfs://awan-0-00-0:44111/hbase**
+* Configure **hbase.rootdir** in **conf/hbase-site.xml**. This value should be set as the value of the **fs.default.name** (in [1.1][## 1.1 Hadoop]) concatenating the "hbase". E.g. **hdfs://awan-0-00-0:44111/hbase**
 * Configure **hbase.tmp.dir**, **hbase.zookeeper.quorum**, **hbase.zookeeper.property.datadir** in **conf/hbase-site.xml**
 * Configure **HBASE_LOG_DIR** in **conf/hbase-env.sh**
 
