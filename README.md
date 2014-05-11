@@ -14,7 +14,7 @@ queries.
 
 ## Executable Files
 The executable files are compressed in rstore.tar.gz.a*. 
-Please download the compressed files (rstore.tar.gz.a*) and execute the following command in order to decompress the files.
+Please download the compressed files (rstore.tar.gz.a*) in the folder [binaries](https://github.com/lifeng5042/RStore/tree/master/binaries) and execute the following command in order to decompress the files.
 ```bash
 cat rstore.tar.gz.a* | tar -zxv
 ```
