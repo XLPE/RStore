@@ -1,7 +1,7 @@
 # RSTORE
 ## Introduction
 R-Store is a scalable distributed
-system for supporting real-time OLAP by extending the MapReduce framework.
+system for supporting real-time OLAP by extending the MapReduce framework, developed by NUS DB group.
 We extend an open source distributed key/value
 system, HBase, as the underlying storage system that stores data
 cube and real-time data. When real-time data are updated, they
